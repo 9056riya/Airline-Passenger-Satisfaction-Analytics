@@ -14,7 +14,6 @@ An end-to-end data analytics project on 100K+ airline passenger survey records. 
 4. Which age groups are the most and least satisfied?
 5. Which combinations of class, travel type, and customer type are the least satisfied?
 6. What share of passengers is in each class, and how far is each class from the overall satisfaction average?
-
 **Delays and service quality**
 7. Do longer departure delays lower satisfaction?
 8. Does delay hurt satisfaction more in some classes than others?
