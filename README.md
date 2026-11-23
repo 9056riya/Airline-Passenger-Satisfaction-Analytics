@@ -58,6 +58,21 @@ Airline Passenger Satisfaction survey data from [Kaggle](https://www.kaggle.com/
 - **Delays:** satisfaction falls from 45.8% for on-time flights to 35.7% for delays over 60 minutes, a smaller effect than class or travel type.
 
 These are patterns in survey data and show association, not proof of cause.
+## Predictive model
+**Goal:** predict whether a passenger will be satisfied, so the airline can flag at-risk passengers early.
+
+**Approach:** one-hot encoded the categorical columns, split the data 80/20 (stratified, `random_state=42`), scaled the features for Logistic Regression, and compared two models on the 20,781 held-out passengers.
+
+| Model | Accuracy | Precision | Recall | F1 |
+|---|---|---|---|---|
+| Logistic Regression | 0.876 | 0.869 | 0.842 | 0.855 |
+| Random Forest | 0.963 | 0.968 | 0.945 | 0.956 |
+
+**Result:** Random Forest performs best, correctly classifying about 96% of passengers. It beats Logistic Regression by roughly 9 percentage points, which suggests satisfaction depends on interactions between factors that a linear model can't capture.
+
+**Key drivers:** online boarding, inflight entertainment, and inflight wifi show the largest rating gaps between satisfied and unsatisfied passengers.
+
+**Limitations:** results come from a single train/test split with default model settings (no cross-validation or tuning), and the model shows association, not causation.
 
 ## Dashboard
 The Tableau dashboard has:
