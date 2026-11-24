@@ -2,7 +2,7 @@
 
 An end-to-end data analytics project on 100K+ airline passenger survey records. It covers data cleaning with Python, SQL analysis in PostgreSQL, and an interactive Tableau dashboard that shows which passenger segments are satisfied and where service falls short.
 
-**Live dashboard:** [View on Tableau Public](https://public.tableau.com:9443/views/Book2_17953751290950/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+**Live dashboard:** [View on Tableau Public](https://public.tableau.com/app/profile/riya.mishra8867/viz/Book2_17953751290950/Dashboard1)
 
 ![Dashboard](dashboard/Airline_Dashboard.png)
 
